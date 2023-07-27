@@ -44,7 +44,7 @@
   <body class="font-dm">
     <header class="container mx-auto">
       <!-- nav bar -->
-      <nav class="text-color-1 lg:px-40">
+      <nav class="text-color-1 lg:px-12 py-5">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -84,6 +84,7 @@
                   </ul>
                 </li>
                 <li><a>About</a></li>
+                <li><a>Login </a></li>
               </ul>
             </div>
             <a class="btn btn-ghost normal-case text-xl"
@@ -248,7 +249,7 @@
           </div>
           <div class="navbar-end gap-4">
             <a
-              class="btn btn-outline btn-accent hover:text-indigo-400 normal-case font-bold flex items-center"
+              class="btn hidden lg:flex btn-outline btn-accent hover:text-indigo-400 normal-case font-bold items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +367,7 @@
     </header>
     <main class="container mx-auto my-28">
       <!-- care section  -->
-      <section class="text-color-2 flex flex-col items-center">
+      <section class="text-color-2 flex flex-col items-center px-6">
         <!-- heading section  -->
         <div class="mx-auto text-center max-w-sm space-y-4 font-medium">
           <h2 class="text-indigo-600">Services we work for</h2>
@@ -374,11 +375,11 @@
         </div>
         <!-- content section  -->
         <div
-          class="max-w-6xl my-10 md:my-20 grid grid-cols-1 md:grid-cols-3 gap-5 text-color-1 px-4"
+          class="max-w-6xl my-10 md:my-20 grid grid-cols-1 md:grid-cols-3 gap-5 text-color-1 px-4 shadow-md shadow-slate-200"
         >
           <!-- card-1  -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center border-2 py-20 rounded px-4"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/blood.png" alt="" />
             <h1 class="font-semibold text-lg">Donate Blood</h1>
@@ -394,7 +395,7 @@
           <!-- end of card -1  -->
           <!-- card-2  -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4 border-2"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/pledge.png" alt="" />
             <h1 class="font-semibold text-lg">Pledge for cause</h1>
@@ -410,7 +411,7 @@
           <!-- end of card -2  -->
           <!-- card-3  -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center border-2 py-20 rounded px-4"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/pledge.png" alt="" />
             <h1 class="font-semibold text-lg">Pledge for cause</h1>
@@ -426,7 +427,7 @@
           <!-- end of card -3  -->
           <!-- card-4  -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center border-2 py-20 rounded px-4"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/Group.png" alt="" />
             <h1 class="font-semibold text-lg">Volunteer with us</h1>
@@ -442,7 +443,7 @@
           <!-- end of card -4  -->
           <!-- card-5  -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center border-2 py-20 rounded px-4"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/help.png" alt="" />
             <h1 class="font-semibold text-lg">Help with us</h1>
@@ -458,7 +459,7 @@
           <!-- end of card -5  -->
           <!-- card- 6 -->
           <div
-            class="space-y-4 flex flex-col items-center justify-center border-2 py-20 rounded px-4"
+            class="space-y-4 flex flex-col items-center justify-center py-20 rounded px-4"
           >
             <img src="./images/partner.png" alt="" />
             <h1 class="font-semibold text-lg">Partner with us</h1>
@@ -472,6 +473,66 @@
             </p>
           </div>
           <!-- end of card - +6-->
+        </div>
+      </section>
+      <!-- data section  -->
+      <section class="grid max-w-5xl mx-auto grid-cols-4 text-color-1 px-4">
+        <div class="space-y-4 text-center">
+          <h1 class="text-3xl lg:text-5xl">254</h1>
+          <p class="text-xs md:text-base text-gray-400">Successful Projects</p>
+        </div>
+        <div class="space-y-4 text-center">
+          <h1 class="text-3xl lg:text-5xl">3782</h1>
+          <p class="text-xs md:text-base text-gray-400">People Impacted</p>
+        </div>
+        <div class="space-y-4 text-center">
+          <h1 class="text-3xl lg:text-5xl">$8M</h1>
+          <p class="text-xs md:text-base text-gray-400">Donated</p>
+        </div>
+        <div class="space-y-4 text-center">
+          <h1 class="text-3xl lg:text-5xl">100+</h1>
+          <p class="text-xs md:text-base text-gray-400">Volunteered</p>
+        </div>
+      </section>
+      <!-- funded section  -->
+      <section
+        class="my-10 lg:my-20 flex flex-col lg:flex-row items-center gap-12 p-4 lg:px-20"
+      >
+        <div class="flex-shrink-0 relative rounded">
+          <img
+            src="./images/shutterstock_1180465816 1.png"
+            width="100%"
+            alt=""
+            class="rounded-lg"
+          />
+          <div
+            class="absolute flex w-full h-full top-0 bottom-0 left-0 right-0 justify-center rounded-lg items-center opacity-0 bg-gray-950 transition-opacity duration-1000 hover:opacity-40"
+          >
+            <div class="text-2xl rounded-lg text-white flex flex-col">
+              <img src="./images/play.png" width="24px" height="24px" alt="" />
+              <p>Watch Now</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-8 max-w-xl">
+          <h1 class="text-3xl lg:text-5xl font-semibold">
+            We've funded $23,135 food projects for 5.3M people around the
+            worldwide.
+          </h1>
+          <p class="text-lg">
+            Get your tests delivered at let home collect sample from the victory
+            of the managments that supplies best design system guidelines ever.
+          </p>
+          <div class="flex pl-6">
+            <ul class="list-image-[url('./images/tick.png')] flex-1">
+              <li>Medical and Vision</li>
+              <li>Life Insurance</li>
+            </ul>
+            <ul class="list-image-[url('./images/tick.png')] flex-1">
+              <li>HSAs and FSAs</li>
+              <li>Commuter Benefits</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
